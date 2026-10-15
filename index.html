@@ -796,4 +796,19 @@ addEventListener('scroll',schedule,{passive:true});addEventListener('resize',sch
 </script><style id="cc-quick-brief">
 .form-trap{display:none!important}.quick-brief-intro{font-size:18px;line-height:1.5;margin:0 0 24px}.brief-details{margin:22px 0;border-top:1px solid #24202b33;border-bottom:1px solid #24202b33}.brief-details summary{padding:18px 0;cursor:pointer;font-size:16px;font-weight:600;min-height:48px}.brief-details summary:focus-visible{outline:2px solid #7952b0;outline-offset:3px}.brief-details-content{padding:0 0 22px}.brief-details-content fieldset{margin-bottom:22px}.form-panel input,.form-panel textarea{font-size:16px}.form-panel .error{line-height:1.5}
 @media(max-width:600px){#contacts .form-grid{grid-template-columns:1fr}.quick-brief-intro{font-size:16px}.brief-details summary{font-size:15px}}
+</style><style id="cc-case-orientation">
+/* Keep four readable folder rows even when a phone rotates to a short viewport. */
+.case-folders{height:max(100svh,760px);min-height:760px;flex-shrink:0}
+.case-folder-stack{min-height:500px;flex-shrink:0}
+@media(max-width:600px){
+ .case-folders{height:max(100svh,800px);min-height:800px}
+ .case-folder-stack{min-height:540px}
+ .case-folder-label{max-width:calc(100% - 48px);min-width:0}
+ .case-folder-title{overflow-wrap:break-word}
+}
+@media(orientation:landscape) and (max-height:600px){
+ .case-folders{height:760px;min-height:760px}
+ .case-folders-heading{gap:20px}
+ .case-folder-label{max-width:calc(100% - 64px)}
+}
 </style></body></html>
